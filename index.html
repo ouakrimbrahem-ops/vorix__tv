@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VORIX TV</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090909;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #38301d;
+}
+
+.logo {
+  color: #e8bd58;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.menu {
+  color: #d8b45c;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 55px 20px;
+  text-align: center;
+  background: linear-gradient(145deg,#242016,#090909);
+}
+
+.hero h1 {
+  color: #e8bd58;
+  font-size: 35px;
+}
+
+.hero p {
+  color: #bbb;
+}
+
+.btn {
+  background: #d8ad48;
+  color: #111;
+  padding: 13px 25px;
+  border: 0;
+  border-radius: 7px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.container {
+  padding: 22px;
+}
+
+h2 {
+  color: #e8bd58;
+}
+
+.channels {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+}
+
+.card {
+  background: #191919;
+  border: 1px solid #493a1e;
+  border-radius: 12px;
+  padding: 22px 10px;
+  text-align: center;
+}
+
+.card .symbol {
+  font-size: 32px;
+}
+
+.card h3 {
+  color: #e8bd58;
+  font-size: 16px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.notice {
+  background: #171717;
+  border-right: 3px solid #d8ad48;
+  padding: 14px;
+  color: #bbb;
+  margin-top: 25px;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 25px;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+}
+
+@media(min-width:700px) {
+  .channels {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">VORIX TV</div>
+  <div class="menu">الرئيسية | القنوات | حولنا</div>
+</header>
+
+<section class="hero">
+  <h1>WELCOME TO VORIX TV</h1>
+  <p>عالم الترفيه بين يديك</p>
+  <button class="btn" onclick="document.getElementById('channels').scrollIntoView({behavior:'smooth'})">
+    اكتشف منصتنا
+  </button>
+</section>
+
+<main class="container" id="channels">
+  <h2>أقسام المنصة</h2>
+
+  <div class="channels">
+
+    <div class="card">
+      <div class="symbol">📺</div>
+      <h3>Live TV</h3>
+      <p>القنوات المباشرة المرخصة</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">⚽</div>
+      <h3>Sports</h3>
+      <p>المحتوى الرياضي المرخص</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🎬</div>
+      <h3>Movies</h3>
+      <p>الأفلام المتاحة قانونياً</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📽️</div>
+      <h3>Series</h3>
+      <p>المسلسلات المرخصة</p>
+    </div>
+
+  </div>
+
+  <div class="notice">
+    مرحباً بك في VORIX TV.
+    منصتنا في طور التطوير، وسيتم إضافة المحتوى
+    المرخص عند توفر حقوق البث.
+  </div>
+</main>
+
+<footer>
+  VORIX TV © 2026
+  <br><br>
+  جميع الحقوق محفوظة
+</footer>
+
+</body>
+  </html>
+  
